@@ -4,25 +4,25 @@ import matplotlib.pyplot as plt
 def planck_law(wavelength, T):
     """
     Planck's law of blackbody radiation.
-    Returns the spectral radiance as a function of wavelength and temperature.
+    Gives the spectral radiance as a function of wavelength and temperature.
     """
-    h = 6.626e-34  # Planck's constant (J·s)
-    c = 3.0e8      # Speed of light (m/s)
-    k = 1.38e-23   # Boltzmann constant (J/K)
+    h = 6.626e-34  # Planck constant 
+    c = 3.0e8      # Speed of light 
+    k = 1.38e-23   # Boltzmann constant 
     return (2 * h * c**2 / wavelength**5) / (np.exp(h * c / (wavelength * k * T)) - 1)
 
 def wien_displacement(T):
     """
-    Calculates the peak wavelength using Wien's displacement law.
+    Calculates the peak wavelength using Wien's law.
     """
-    b = 2.897e-3  # Wien's displacement constant (m·K)
+    b = 2.897e-3  # Wien's  constant 
     return b / T
 
 def stefan_boltzmann(T):
     """
     Calculates total radiated power using Stefan-Boltzmann law.
     """
-    sigma = 5.67e-8  # Stefan-Boltzmann constant (W/m^2·K^4)
+    sigma = 5.67e-8  # S-B constant 
     return sigma * T**4
 
 def plot_blackbody(temperatures):
@@ -51,10 +51,10 @@ def main():
     """
     Main function to interactively take user input and plot blackbody radiation.
     """
-    print("Welcome to the Blackbody Radiation Visualizer!")
-    print("This tool plots radiation curves for objects at various temperatures.")
+    print("Blackbody Radiation Visualizer!")
+    print("This tool plots radiation curves for objects.")
     try:
-        n = int(input("How many temperatures would you like to plot? "))
+        n = int(input("numer of temperatures would you like to plot? "))
         temperatures = []
         for i in range(n):
             T = float(input(f"Enter temperature {i + 1} in Kelvin (e.g., 3000): "))
@@ -64,7 +64,7 @@ def main():
         plot_blackbody(temperatures)
 
     except ValueError:
-        print("Invalid input! Please enter numbers only.")
+        print("Please enter numbers only.")
 
 if __name__ == "__main__":
     main()
