@@ -5,7 +5,7 @@ This project is a Python tool that helps visualize blackbody radiation using Pla
 
 Features
 
-Asks users for the number of temperatures and their values in Kelvin.
+Asks  for the number of temperatures and their values in Kelvin.
 Automatically computes trends like Wien’s peak wavelength and total emitted power for each temperature.
 Each curve is labeled 
 
