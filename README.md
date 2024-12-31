@@ -1,6 +1,5 @@
 # Blackbody-Radiation-Visualizer
-This project is a Python tool that helps visualize blackbody radiation using Planck’s law. It allows  to plot the intensity of radiation for different temperatures and explore key trends like the peak wavelength (using Wien’s displacement law) and the total power emitted (using the Stefan-Boltzmann law). 
-
+This project is a Python tool that helps visualize blackbody radiation using Planck’s law.  explore the peak wavelength and the total power emitted 
 
 
 Features
