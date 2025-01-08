@@ -49,10 +49,10 @@ def plot_blackbody(temperatures):
 
 def main():
     """
-    Main function to interactively take user input and plot blackbody radiation.
+
     """
     print("Blackbody Radiation Visualizer!")
-    print("This tool plots radiation curves for objects.")
+    print("This tool plots radiation curve.")
     try:
         n = int(input("numer of temperatures would you like to plot? "))
         temperatures = []
